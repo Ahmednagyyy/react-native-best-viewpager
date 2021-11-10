@@ -16,7 +16,7 @@ const SCROLL_STATE = {
     settling: 'settling',
     dragging: 'dragging'
 }
-export default class ViewPager extends Component {
+export default class ViewPager2 extends Component {
     static propTypes = { ...ViewPager.propTypes }
 
     static defaultProps = {
@@ -150,7 +150,7 @@ export default class ViewPager extends Component {
                 child.type.displayName &&
                 (child.type.displayName !== 'RCTView') &&
                 (child.type.displayName !== 'View')) {
-                console.warn('Each ViewPager child must be a <View>. Was ' + child.type.displayName)
+                console.warn('Each ViewPager2 child must be a <View>. Was ' + child.type.displayName)
             }
             return React.createElement(child.type, newProps)
         })
